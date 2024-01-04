@@ -42,7 +42,12 @@ body {
     border: solid 1px black;
 
 }
-
+.muzik{
+    opacity: 0;
+}
+.muzik:hover{
+    opacity: 0.2;
+}
 .nav-link {
     background-image: url("../7.jpg");
 }

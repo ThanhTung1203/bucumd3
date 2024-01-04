@@ -2,53 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Login</title>
+    <link rel="stylesheet" href="login.css">
 </head>
-<link rel="stylesheet" href="login.css">
 <body>
-<header class="header">
-    <nav class="nav">
-        <a href="#"> Home </a>
-        <a href="#"> About</a>
-        <a href="#"> Service </a>
-        <a href="#"> Contact </a>
-    </nav>
-</header>
-<div class="background"></div>
-<section class="home">
-    <div class="content">
-        <div class="logo">
-            <img src="../bucu.jpg" alt="" class="logo-img">
+<div class="container">
+
+    <div class="form login" id="form">
+        <div class="content">
+            <h1>Login</h1>
+            <div class="group">
+                <input type="text" id="username-login" class="inputText" placeholder=" " required>
+                <label for="username-login">Username</label>
+            </div>
+            <div class="group">
+                <input type="password" id="pass-login" class="inputText" placeholder=" " required>
+                <label for="pass-login">Password</label>
+            </div>
+            <div class="group">
+                <input type="checkbox"> Save login
+            </div>
+            <button>Login</button>
         </div>
 
-        <div class="icon">
-            <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-facebook"></i> <i
-                class="fa-brands fa-twitter"></i> <i class="fa-brands fa-github"></i></div>
+
+        <div class="content">
+            <h1>Register</h1>
+            <div class="group">
+                <input type="text" id="username-reg" class="inputText" placeholder=" " required>
+                <label for="username-reg">Username</label>
+            </div>
+            <div class="group">
+                <input type="password" id="email-reg" class="inputText" placeholder=" " required>
+                <label for="email-reg">Email</label>
+            </div>
+            <div class="group">
+                <input type="password" id="pass-reg" class="inputText" placeholder=" " required>
+                <label for="pass-reg">Password</label>
+            </div>
+            <div class="group">
+                <input type="checkbox"> Save login
+            </div>
+            <button>Login</button>
+        </div>
+
+
+        <div class="form-rotate">
+            <div id="rotate"></div>
+        </div>
     </div>
-    <div class="login">
-        <h2> Sign In</h2>
-        <div class="input">
-            <label>User<input type="text" id="user" placeholder="" required>
-                                <i class="fa-solid fa-envelope"></i>
-            </label></div>
-        <div class="input">
-            <label>Password<input type="password" id="pass" placeholder="" required>
-            </label></div>
-        <div class="check">
-            <label><input type="checkbox"> Remember me </label>
-            <a href="#"> Forgot Password?</a>
-        </div>
-        <div class="button">
-            <button id="dn">Đăng nhập</button>
-
-        </div>
-        <div class="sign-up">
-            <p> Don't have an account?</p>
-            <a href="#">
-                Sign up</a>
-        </div>
+    <div class="option">
+        <div class="bg-active" id="bg-active"></div>
+        <div class="changeType active" id="login">Login</div>
+        <div class="changeType" id="register">Register</div>
     </div>
-
-</section>
+</div>
+<script src="js-login.js"></script>
 </body>
 </html>
