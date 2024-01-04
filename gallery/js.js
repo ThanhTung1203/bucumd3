@@ -4,5 +4,5 @@ document.getElementById('next').onclick = function (){
 }
 document.getElementById('pre').onclick = function () {
     let list = document.querySelectorAll('.item');
-    document.getElementById('slide').appendChild(list[list.length-1])
+    document.getElementById('slide').prepend(list[list.length-1])
 }
