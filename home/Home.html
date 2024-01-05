@@ -105,8 +105,8 @@
         </div>
     </div>
     <div class="gallery">
-        <h1 style="color: white"><a href="http://localhost:63342/bucumd3/gallery/Gallery.html?_ijt=
-                    pbnfqc5gnen7t35igqdqdm65ea&_ij_reload=RELOAD_ON_SAVE" target="_blank" style="color: white" >OUR GALLERY</a></h1>
+        <h1  onclick="checkLogin()" style="cursor: pointer;color: white" >OUR GALLERY</h1>
+
         <p>Làm thì làm , không làm phải bucus !!!
         </p>
         <div class="container" style="height: 40px">
@@ -188,6 +188,11 @@
 </div>
 </div>
 
-
+<script>
+    function checkLogin() {
+            alert("Bạn phải đăng nhập để sử dụng chức năng này!");
+            window.location.href = "http://localhost:63342/bucumd3/login/Login.html?_ijt=ojmqg3mud1o9pla4bggovih3s4&_ij_reload=RELOAD_ON_SAVE";
+    }
+</script>
 </body>
 </html>
