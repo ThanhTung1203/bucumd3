@@ -125,6 +125,7 @@ p:hover {
     transform: scale(1.05);
 }
 
+
 .gallery-item:hover .test {
     position: absolute;
     font-size: 30px;
@@ -140,6 +141,7 @@ p:hover {
     padding-left: 12px;
 
 }
+
 
 .gallery-item {
     position: relative;

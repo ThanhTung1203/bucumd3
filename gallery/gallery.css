@@ -65,19 +65,19 @@ body {
 
 .item .content {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 200px;
     width: 300px;
     text-align: left;
     padding: 0;
-    color: #eee;
+    color: black;
     transform: translate(0, -50%);
     display: none;
     font-family: system-ui;
 }
 
 .content .name {
-    color: whitesmoke;
+    color: black;
 }
 
 .item:nth-child(2) .content {
@@ -93,10 +93,10 @@ body {
 }
 
 .item .des {
-    margin: 20px 0;
+    margin: 10px 0;
     opacity: 0;
     animation: showcontent 1s ease-in-out 0.3s forwards;
-    color: whitesmoke;
+    color: black;;
 
 }
 

@@ -30,37 +30,39 @@
         <div class="content">
             <h1>Register</h1>
             <div class="group">
-                <input type="text" id="username-reg" class="inputText" placeholder="Username" required>
+                <input type="text" id="username-reg" class="r-inputText" placeholder="Username" required>
                 <label for="username-reg"></label>
             </div>
             <div class="group">
-                <input type="password" id="email-reg" class="inputText" placeholder="Email" required>
-                <label for="email-reg"></label>
+                <input type="text" id="1email-reg" class="r-inputText" placeholder="Password" required>
+                <label for="1email-reg"></label>
+            </div>
+            <select>
+                <option>Ngươì dùng</option>
+                <option>Chủ nhà</option>
+            </select>
+            <div class="group">
+                <input type="text" id="2email-reg" class="r-inputText" placeholder="Name" required>
+                <label for="2email-reg"></label>
             </div>
             <div class="group">
-                <input type="checkbox" id="role-reg" class="inputText" placeholder="Password" required>
-                <input type="checkbox" id="-reg" class="inputText" placeholder="Password" required>
-                <label for="role-reg"></label>
-            </div><div class="group">
-                <input type="number" id="phone-reg" class="inputText" placeholder="Password" required>
-                <label for="phone-reg"></label>
+                <input type="number" id="3email-reg" class="r-inputText" placeholder="Phone-number" required>
+                <label for="3email-reg"></label>
+            </div>
             </div>
 
 
-
+            <div class="form-rotate">
+                <div id="rotate"></div>
+            </div>
         </div>
-
-
-        <div class="form-rotate">
-            <div id="rotate"></div>
+        <div class="option">
+            <div class="bg-active" id="bg-active"></div>
+            <div class="changeType active" id="login">Login</div>
+            <div class="changeType" id="register">Register</div>
         </div>
     </div>
-    <div class="option">
-        <div class="bg-active" id="bg-active"></div>
-        <div class="changeType active" id="login">Login</div>
-        <div class="changeType" id="register">Register</div>
-    </div>
+    <script src="js-login.js"></script>
 </div>
-<script src="js-login.js"></script>
 </body>
 </html>
