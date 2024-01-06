@@ -50,7 +50,13 @@
                         <br>
                     </ul>
                 </div>
-                <button>Đặt phòng ngay</button>
+                <button onclick="showBookingForm()">Đặt phòng ngay</button>
+                <form class="bookingForm" style="display:none;">
+                    <label for="checkInTime">Thời gian check-in:</label>
+                    <input type="time" id="checkInTime" name="checkInTime">
+                    <button type="submit">Xác nhận</button>
+                    <button type="button" onclick="cancelBooking()">Hủy</button>
+                </form>
             </div>
         </div>
         <div class="item" style="background-image: url(#)">
@@ -66,7 +72,13 @@
                         <br>
                     </ul>
                 </div>
-                <button>Đặt phòng ngay</button>
+                <button onclick="showBookingForm()">Đặt phòng ngay</button>
+                <form class="bookingForm" style="display:none;">
+                    <label for="checkInTime1">Thời gian check-in:</label>
+                    <input type="time" id="checkInTime1" name="checkInTime">
+                    <button type="submit">Xác nhận</button>
+                    <button type="button" onclick="cancelBooking()">Hủy</button>
+                </form>
             </div>
         </div>
         <div class="item"
@@ -83,10 +95,16 @@
                         <br>
                     </ul>
                 </div>
-                <button>Đặt phòng ngay</button>
+                <button onclick="showBookingForm()">Đặt phòng ngay</button>
+                <form class="bookingForm" style="display:none;">
+                    <label for="checkInTime2">Thời gian check-in:</label>
+                    <input type="time" id="checkInTime2" name="checkInTime">
+                    <button type="submit">Xác nhận</button>
+                    <button type="button" onclick="cancelBooking()">Hủy</button>
+                </form>
             </div>
         </div>
-        <div class="item" style="background-image: url(#)
+        <div class="item" style=ghoit"background-image: url(#)
         ">
             <div class="content">
                 <div class="name">BucuquaMD3</div>
@@ -100,7 +118,13 @@
                         <br>
                     </ul>
                 </div>
-                <button>Đặt phòng ngay</button>
+                <button onclick="showBookingForm()">Đặt phòng ngay</button>
+                <form class="bookingForm" style="display:none;">
+                    <label for="checkInTime3">Thời gian check-in:</label>
+                    <input type="time" id="checkInTime3" name="checkInTime">
+                    <button type="submit">Xác nhận</button>
+                    <button type="button" onclick="cancelBooking()">Hủy</button>
+                </form>
             </div>
         </div>
         <div class="item" style="background-image: url(#)">
@@ -116,7 +140,13 @@
                         <br>
                     </ul>
                 </div>
-                <button>Đặt phòng ngay</button>
+                <button onclick="showBookingForm()">Đặt phòng ngay</button>
+                <form class="bookingForm" style="display:none;">
+                    <label for="checkInTime4">Thời gian check-in:</label>
+                    <input type="time" id="checkInTime4" name="checkInTime">
+                    <button type="submit">Xác nhận</button>
+                    <button type="button" onclick="cancelBooking()">Hủy</button>
+                </form>
             </div>
         </div>
         <div class="buttons">
@@ -125,7 +155,21 @@
         </div>
     </div>
 </div>
+<script>
+    function showBookingForm() {
+        var forms = document.querySelectorAll(".bookingForm");
+        forms.forEach(function(form) {
+            form.style.display = "block";
+        });
+    }
 
+    function cancelBooking() {
+        var forms = document.querySelectorAll(".bookingForm");
+        forms.forEach(function(form) {
+            form.style.display = "none";
+        });
+    }
+</script>
 
 <script src="js.js"></script>
 </body>
